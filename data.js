@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
-mongoose.connect("mongodb://localhost:27017/Cookr");
+const url = process.env.MONGO_URL;
+mongoose.connect("url/CookR");
 
 const data=require('./new_data.json');
 
