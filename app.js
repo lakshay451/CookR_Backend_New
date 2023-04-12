@@ -27,9 +27,8 @@ app.use(passport.initialize());
 app.use(passport.session());
 app.use(cors());
 
-const url = process.env.MONGO_URL;
 
-mongoose.connect(url);
+mongoose.connect("mongodb+srv://lakshayjoshiec20b1274:Lakshay123@cluster0.h108bsp.mongodb.net");
 
 const userSchema = new mongoose.Schema({
     username: String,
